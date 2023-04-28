@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Точечка в области</title>
+    <script type="text/javascript" src="script.js"></script>
+    <link href="style1.css" rel="stylesheet">
+</head>
+<body>
+<div id="hatBlock" class="hugeblock">
+    <span>Сковородников Дмитрий Алексеевич, Группа P32111, Вариант 1713</span>
+</div>
+<div id="plotBlock">
+    <img src="img.png">
+</div>
+<div id="formBlock" class="hugeblock">
+    <form id="form" method="post" action="script.php" name="xyzForm">
+        <div id="xBlock" class="wrap">
+            <div>X:</div>
+            <div>
+                <input id="xRadio" name="xRadio" type="radio" value="-2">-2
+                <input name="xRadio" type="radio" value="-1.5">-1.5
+                <input name="xRadio" type="radio" value="-1">-1
+                <input name="xRadio" type="radio" value="-0.5">-0.5
+                <input name="xRadio" type="radio" value="0">0
+                <input name="xRadio" type="radio" value="0.5">0.5
+                <input name="xRadio" type="radio" value="1">1
+                <input name="xRadio" type="radio" value="1.5">1.5
+                <input name="xRadio" type="radio" value="2">2
+            </div>
+        </div>
+        <div id="yBlock">
+            <div>Y:</div>
+            <div>
+                <input type="text" id="yText" name="yText" placeholder="-3 < y < 5">
+            </div>
+        </div>
+        <div id="rBlock">
+            <div>R:</div>
+            <div>
+                <input type="checkbox" name="rCheckbox[]" value="1">1
+                <input type="checkbox" name="rCheckbox[]" value="2">2
+                <input type="checkbox" name="rCheckbox[]" value="3">3
+                <input type="checkbox" name="rCheckbox[]" value="4">4
+                <input type="checkbox" name="rCheckbox[]" value="5">5
+            </div>
+        </div>
+
+        <button id="submitButton" type="submit">
+            I'm submit button
+        </button>
+    </form>
+</div>
+<div id="resultBlock" class="hugeblock">
+    <div class="resultTitle">
+        Недавние запросы
+    </div>
+    <div class="resultTable">
+        <table id="resultTable">
+            <tr id="hatOfTable">
+                <th>№</th>
+                <th>Дата и время</th>
+                <th>Время выполнения запроса(сек)</th>
+                <th>X</th>
+                <th>Y</th>
+                <th>R</th>
+                <th>Результат</th>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>
